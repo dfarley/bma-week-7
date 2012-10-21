@@ -12,6 +12,9 @@ public class Main {
 			log(e);
 			throw e;
 		}
+		finally {
+			System.out.println("I'm always called");
+		}
 	}
 
 	public static void log(Exception e) {
