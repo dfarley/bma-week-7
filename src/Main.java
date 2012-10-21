@@ -1,15 +1,16 @@
 
 public class Main {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		try {
 			int i = 1/0;
 			System.out.println(i);
 		}
 		catch(ArithmeticException e) {
-			//this happens and we don't log it
+			System.out.println("handling ArithmeticException");
 		}
 		catch(Exception e) {
 			log(e);
+			throw e;
 		}
 	}
 
