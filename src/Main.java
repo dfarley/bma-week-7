@@ -5,10 +5,10 @@ public class Main {
 			int i = 1/0;
 			System.out.println(i);
 		}
-		catch(Exception e) {
-			log(e);
-		}
 		catch(ArithmeticException e) {
+			//this happens and we don't log it
+		}
+		catch(Exception e) {
 			log(e);
 		}
 	}
